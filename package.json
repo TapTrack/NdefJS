@@ -1,0 +1,28 @@
+{
+  "name": "@taptrack/ndef",
+  "version": "1.0.0",
+  "description": "Ndef message parser and composer",
+    "main": "dist/ndef.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TapTrack",
+  "license": "Apache-2.0",
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/TapTrack/NdefJS.git"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-debug": "^2.1.2",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "merge-stream": "^1.0.0",
+    "run-sequence": "^1.2.1"
+  }
+}
