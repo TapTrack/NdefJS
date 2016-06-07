@@ -1,4 +1,13 @@
 Library for creating and parsing NDEF messages
+# Installing
+Bower
+```
+    bower install ndef
+```
+NPM
+```
+    npm install @taptrack/ndef
+```
 
 # Creating Records
 ## Text records
