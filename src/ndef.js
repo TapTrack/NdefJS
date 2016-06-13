@@ -4,7 +4,6 @@
         // AMD
         define([], factory);
     } else if (typeof exports === 'object') {
-        // Node, CommonJS-like
         module.exports = factory();
     } else {
         // Browser globals (root is window)
@@ -332,7 +331,8 @@
                 bytes === null) {
                     throw "Bytes must be defined and non-null";
                 }
-
+        // fixes odd issue when normal arrays are passed 
+        bytes = new Uint8Array(bytes);
         // theoretical minimum is 3 bytes
         if(bytes.length < 3) {
             throw "Byte array is too short to contain any kind of NDEF message";
