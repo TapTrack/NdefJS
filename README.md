@@ -1,4 +1,13 @@
 Library for creating and parsing NDEF messages
+# Installing
+Bower
+```
+    bower install ndef
+```
+NPM
+```
+    npm install @taptrack/ndef
+```
 
 # Creating Records
 ## Text records
@@ -62,7 +71,6 @@ Library for creating and parsing NDEF messages
 ```javascript
     // takes a Uint8Array containing a valid, complete message
     var message = ndef.Message.fromBytes(byteArray);
-    var 
 
     // array of all the records
     var records = message.getRecords();
