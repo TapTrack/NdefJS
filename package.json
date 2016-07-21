@@ -1,6 +1,6 @@
 {
   "name": "@taptrack/ndef",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ndef message parser and composer",
     "main": "dist/ndef.js",
   "scripts": {

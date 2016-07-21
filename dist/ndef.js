@@ -121,7 +121,7 @@
     NdefRecord.URI_PRE_BTGOEP = 0x1A;
     NdefRecord.URI_PRE_TCPOBEX = 0x1B;
     NdefRecord.URI_PRE_IRDAOBEX = 0x1C;
-    NdefRecord.URI_PRE_FILE = 0x1E;
+    NdefRecord.URI_PRE_FILE = 0x1D;
     NdefRecord.URI_PRE_URN_EPC_ID = 0x1E;
     NdefRecord.URI_PRE_URN_EPC_TAG = 0x1F;
     NdefRecord.URI_PRE_URN_EPC_PAT = 0x20;
