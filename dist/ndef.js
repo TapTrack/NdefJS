@@ -205,7 +205,7 @@
 
         if(hasId) {
             messageSize += 1; // id length
-            messageSize += id.length;
+            messageSize += this.id.length;
         }
 
         messageSize += this.payload.length;
@@ -395,11 +395,13 @@
                 if(hasIdLength) {
                     idLength = bytes[idLengthStartIdx];
                 }
+                
+                var idLengthEndIdx = idLengthStartIdx + (hasIdLength ? 1 : 0);
+                var typeEndIdx = idLengthEndIdx + typeLength;
+                throwOnMsgTooShort(bytes,typeEndIdx);
+                var type = new Uint8Array(bytes.buffer,idLengthEndIdx,typeLength);
 
-                throwOnMsgTooShort(bytes,idLengthStartIdx+typeLength);
-                var type = new Uint8Array(bytes.buffer,idLengthStartIdx,typeLength);
-
-                var idStartIdx = idLengthStartIdx+typeLength;
+                var idStartIdx = typeEndIdx;                
                 throwOnMsgTooShort(bytes,idStartIdx+idLength);
                 var id = new Uint8Array(bytes.buffer,idStartIdx,idLength);
 
