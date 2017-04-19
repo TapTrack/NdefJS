@@ -77,7 +77,7 @@ NPM
     
     for(var i = 0; i < records.length; i++) {
         var record = records[i];
-        console.log("Chunked: "+(record.isChunked?"Yes":"No");
+        console.log("Chunked: "+(record.isChunked?"Yes":"No"));
         console.log("TNF: "+record.getTnf().toString());
         console.log("Type: "+record.getTnf().toString());
         console.log("ID: "+record.getId().toString());
